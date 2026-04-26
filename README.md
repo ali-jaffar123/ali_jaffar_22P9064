@@ -2,35 +2,39 @@
 
 **GitHub Repository:** https://github.com/ali-jaffar123/ali_jaffar_22P9064
 
-## Project Overview
-This is a comprehensive, multi-role Book Request Management System developed using PHP, MySQL, and PDO (PHP Data Objects). The system provides distinct functionalities for three user roles: Users, Admins, and Super Admins. It features secure password hashing, session-based access control, and integration with the Google Books API.
+# Book Request Management System
 
-## Key Features
-* **User Role:** Register, login, browse books fetched via API, request books, and track request status.
-* **Admin Role:** Manage user requests (Pending, In Progress, Completed, Rejected), view system statistics, and browse the local book database.
-* **Super Admin Role:** All admin capabilities plus management of admin accounts and full system oversight.
-* **API Integration:** Real-time book fetching from Google Books API with a implemented rate limit (5 calls per 24 hours).
-* **Security:** Prepared statements (PDO) to prevent SQL Injection and `password_hash()` for secure credential storage.
+**GitHub Repository:** https://github.com/ali-jaffar123/ali_jaffar_22P9064
 
-## Setup & Installation Instructions
+## Project Description
+This is an elaborate multi-level Book Request Management System implemented using PHP, MySQL, and PDO. The project contains separate functionalities based on the following three user levels: User, Admin, and Super Admin. The project uses secure password hashing, session-based authentication, and the integration of the Google Books API.
 
-### 1. Move Project to Local Server
-1. Ensure **XAMPP** is installed and the Apache and MySQL modules are running.
-2. Copy the `ali_jaffar_22P9064` folder.
-3. Paste it into your XAMPP root directory: `C:\xampp\htdocs\`
+## Features
+* **User Level:** Registration, login, searching books via the API, requesting books, and monitoring the request progress.
+* **Admin Level:** Monitoring and managing all the requests of the users (pending, in progress, completed, rejected), viewing all the statistics about the system, and searching the local database of the system.
+* **Super Admin Level:** All functions of the admin level plus managing the admin accounts.
+* **Integration of API:** Search and fetch real-time information about the book from the Google Books API, along with the implementation of a rate limit of five searches within twenty-four hours.
+* **Security Measures:** Prepared Statements (PDO) to avoid SQL Injection and `password_hash()`.
 
-### 2. Database Setup
-1. Open your browser and go to `http://localhost/phpmyadmin`.
-2. Create a new database named exactly: `book_request_system`
-3. Click on the `book_request_system` database in the left sidebar.
-4. Click the **Import** tab at the top.
-5. Choose the file `book_request_system.sql` located in the root of the project folder.
-6. Click **Import** (or **Go**).
+## Installation Guide
 
-### 3. Run the Project
-1. Open your web browser.
-2. Navigate to: `http://localhost/ali_jaffar_22P9064`
-3. You will be automatically redirected to the login page.
+### 1. Move Project Folder to Local Machine
+1. Make sure you have **XAMPP** installed and that Apache and MySQL are active.
+2. Copy the project folder `ali_jaffar_22P9064`
+3. Paste it inside `htdocs` folder inside XAMPP: `C:\xampp\htdocs\`
+
+### 2. Install Database
+1. Go to `http://localhost/phpmyadmin` in your browser.
+2. Create a new database named `book_request_system` exactly.
+3. Select `book_request_system` from the list on the left sidebar.
+4. Press **Import** from the tabs on top of the screen.
+5. Choose SQL file located in the root of the project folder `book_request_system.sql`.
+6. Press Import button (Go button).
+
+### 3. Launch Project
+1. Open browser.
+2. Go to `http://localhost/ali_jaffar_22P9064`.
+3. You will be automatically redirected to login screen.
 
 ## Default Testing Credentials
 
@@ -38,14 +42,14 @@ This is a comprehensive, multi-role Book Request Management System developed usi
 * **Username:** `superadmin`
 * **Password:** `123456`
 
-### Admin & User Roles
-* **Admin:** Log in as Super Admin first to create an Admin account via the "Manage Admins" panel.
-* **User:** Use the "Register" link on the main login page to create a new user account.
+### Admin and User Roles
+* **Admin:** First, log in as the Super Admin to create an admin account from the "Manage Admins" tab.
+* **User:** Register a new user account from the "Register" link on the login page.
 
-## Technical Requirements Fulfilled
-- [x] Use of PHP Sessions and Redirection.
-- [x] Database connectivity using PDO.
-- [x] Integration with Google Books API.
-- [x] Implementation of Rate Limiting.
-- [x] Proper folder structure and use of `includes` for header/footer.
-- [x] Secure password handling.
+## Technical Requirements Achieved
+- [x] Session management and redirection in PHP.
+- [x] Database connection through PDO.
+- [x] API integration with Google Books.
+- [x] Rate limiting implementation.
+- [x] Correct file structure and inclusion of headers and footer with `includes`.
+- [x] Password security.
